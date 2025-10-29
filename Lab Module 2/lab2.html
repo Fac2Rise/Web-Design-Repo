@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Basic Server Structure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header><h1 id="home">Building a Personal Profile Page</h1></header>
+
+        <nav>
+            <a href="#home">Home</a> | <a href="#about">About Me</a> | <a href="#registration">Registration Form</a>
+        </nav>
+
+        <section>
+            <h2 id="about">About Me</h2>
+
+            <section>
+                <article>
+                    <h3>Personal Profile</h3>
+                    <p>Hello! My name is Lim Jun Han, a 20-year-old student currently studying at UMT. I was born on the 12th of December, 2005, in the beautiful region of Iwate, Japan. <br>
+                        I have a passion for learning and enjoy spending my free time reading books, playing video games, and coding. I am excited to continue my educational journey and <br>
+                        explore new opportunities in the field of technology.</p>
+                </article>
+            </section>
+
+            <table border="2" cellpadding="20" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Birth Date</th>
+                        <th>Birth Place</th>
+                        <th>Occupation</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lim Jun Han</td>
+                        <td>20</td>
+                        <td>12th December 2005</td>
+                        <td>Iwate, Japan</td>
+                        <td>Student at UMT</td>
+                        <td>Reading, Gaming, Coding</td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+        </section>
+
+        <section>
+            <h2 id="registration">Registration Form</h2>
+            <form action="submit_form.php" method="post">
+                <!-- <label for="fname">First Name: </label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label for="lname">Last Name: </label><br>
+                <input type="text" id="lname" name="lastname"><br><br> -->
+
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                <div class="form__group">
+                    <input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+                    <label for="name" class="form__label">Full Name</label><br>
+                    <input type="submit" value="Submit">
+                </div>
+
+                <label for="gender">Gender: </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <br><br>
+
+        <section>   
+            <form action="submit_form.php" method="post">
+
+                <!-- Check Box -->
+                <label for="hobby">Select Your Hobbies: </label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby1">Gaming</label><br><br>
+
+                <!-- Drop Down Menu -->
+                <label for="country">Choose a country: </label><br>
+                <select name="country" id="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">CANADA</option>
+                    <option value="uk">UK</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+
+    <footer>
+        <p>Copyright &copy; 2025 My Personal Profile Page</p>
+    </footer>
+</html>
