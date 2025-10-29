@@ -8,3 +8,12 @@ Lastly, we customized our own website introducing ourselves, with hobbies and di
 
 This website also displays our favourite hobbies and books using images. 
 
+In lab module 2, we learn to use basic HTML elements, including <header>, <nav>, <section>, <article> and <footer>
+
+These elements divide the web page into different section. 
+
+Other elements such as <form> are used with <label> and <input> to receive user input from the website. Submit button is used also to send the information to a php file. 
+
+In this lab, these elements are combined to make a beautiful page layout with different elements such as form, radio button, checkbox and more. 
+
+
