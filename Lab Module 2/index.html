@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Basic Server Structure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Science</td>
+                <td>B+</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th colspan="2">Student Information</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td colspan="2">Mathematics A+</td>
+            </tr>
+        </table>    
+
+        <section>
+            <h2>Registration Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="fname">First Name: </label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label for="lname">Last Name: </label><br>
+                <input type="text" id="lname" name="lastname"><br><br>
+
+                <label for="gender">Gender: </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <br><br>
+        <section>   
+            <form action="submit_form.php" method="post">
+
+                <!-- Check Box -->
+                <label for="hobby">Select Your Hobbies: </label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby1">Gaming</label><br><br>
+
+                <!-- Drop Down Menu -->
+                <label for="country">Choose a country: </label><br>
+                <select name="country" id="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">CANADA</option>
+                    <option value="uk">UK</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+</html>
