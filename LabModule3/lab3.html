@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Contact Form</title>
+    </head>
+
+    <body style="background-color: bisque;">
+        <div id="header" style="text-align: center; box-shadow: 0 10px 30px rgba(2,6,23,0.6); padding: 20px; margin: 20px;">
+            <h1><strong>Student Learning Hub</strong></h1>
+            <span><h2>Built with Minimalism and Simplicity.</h2></span>
+            <ul style="text-align: center;">
+                <li style="margin: 0.5cm; list-style-type: none;"><a href="#header">Header Section </a> </li> 
+                <li style="margin: 0.5cm; list-style-type: none;"><a href="#content">Content Section </a> </li> 
+                <li style="margin: 0.5cm; list-style-type: none;"><a href="#footer">Footer Section</a> </li>
+            </ul>
+
+            <div class="hero-info">
+            <h2>Overview</h2>
+            <p class="meta">This hub is the Lab Exercise for lab module 3.</p>
+            <div class="grid" style="margin-top:12px">
+                <div class="card">
+                    <h3>The use of input</h3>
+                    <p>Obtain users input from the website.</p>
+                    </div>
+                    <div class="card">
+                        <h3>The use of output</h3>
+                        <p>Able to obtain 2 inputs for calculation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>The use of entities</h3>
+                        <p>Entities such as &copy; and &checkmark; are used to create entities that cannot be written normally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" style="text-align: center; box-shadow: 0 10px 30px rgba(2,6,23,0.6); padding: 20px; margin: 20px;">
+            <h2>Newsletter</h2>
+            <p>To subscribe to the Newsletter. Please enter the following information. </p>
+                <form action="">
+                    Email: <input style="width: 20%; padding: 12px; margin: 10px 0;" type="email" name="useremail">
+                    <br> 
+                    Tarikh: <input style="width: 20%; padding: 12px; margin: 10px 0;" type="date" name="Tarikh">
+                    <br>
+                    User Satisfaction: <input style="width: 10%; margin: 10px 0;" id="x" type="range" min="0" max="10" step="1" value="0">  
+                    <br>
+                    <input type="submit" value="Satisfaction">
+                </form>
+
+                <br>
+                <h3>For a fun Math game</h3>
+                <p>Interact with this number bar to see an output.</p>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="a" value="50">
+                    + <input type="number" id="b" value="25">
+                    = <output name="x" for="a b"></output>
+                </form>
+        </div>
+
+        <div style="display: block; box-shadow: 0 10px 30px rgba(2,6,23,0.6); padding: 20px; margin: 20px; "id="footer">
+            <footer>
+                <p>Author: Lim Jun Han</p>
+                <p><a href="mailto:junelim1212@gmail.com">junelim1212@gmail.com</a></p>
+                <p>&copy; 2025 Lim Jun Han</p>
+            </footer>
+        </div>
+    </body>
+</html>
