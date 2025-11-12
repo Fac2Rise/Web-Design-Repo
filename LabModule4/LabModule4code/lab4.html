@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Building a Responsive Webpage with HTML5 and CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lab4.css">
+    </head>
+
+    <body>
+        
+        <header id="home" class="home"><h2>Responsive Webpage Using HTML5 and CSS</h2></header>
+        
+        <div>
+            <nav>             
+                <a href="#home">HomePage</a> 
+                <a href="#news">News of Today</a> 
+                <a href="#videoShow">Video Show</a>
+                <a href="#form">Newsletter </a>
+                <a href="#footer">Footer</a>
+            </nav>
+        </div>
+
+        <div id="news"class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2 style="text-align: center;">Percentage of 2025:</h2>
+                <meter min="0" max="100" value="86"></meter>
+
+                <p class="year" style="text-align: center; font-size: 30px;"><b>Play games and relax!</b></p>
+                <p style="text-align: center; font-size: 30px;"><b>Spend your time wisely, make the most of it count!</b></p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h2>Malaysia launches South-East Asia’s first advanced chip testing centre.</h2>
+                <p class="chips" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+                    CYBERJAYA: Malaysia today achieved another milestone in the semiconductor industry 
+                    with the inauguration of the Advanced Chip Testing Centre by Prime Minister Datuk Seri Anwar Ibrahim, 
+                    during the launch of Malaysia Semiconductor IC Design Park 2 (IC Park 2) at CoPlace 9, here.
+                </p>    
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>What is a website</h2> <br>
+                <article class="article">
+                    <p style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">
+                        A website (also written as a web site) is any web page whose content is identified by a common domain 
+                        name and is published on at least one web server. Websites are typically dedicated to a particular topic or purpose, 
+                        such as news, education, commerce, entertainment, or social media.
+                    </p>
+                    <a class="website" href="https://en.wikipedia.org/wiki/Website">Websites</a>
+                </article>
+            </div>
+
+            <div id="videoShow" class="column" style="background-color: #ddd;">
+                <h2 class="videoShow">Below shows a video of Upin Ipin being displayed.</h2>
+                <video class="videoShow" width="400" height="300" controls>
+                    <source src="upinipin.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+
+        <div id="form" class="rows">
+            <p class="form"></p>
+            <div class="column" style="background-color: #eee;">
+                 <form>
+                    <label for="Name">Name:</label><br>
+                    <input type="text" id="Name" name="Name"><br>
+
+                    <br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+
+                    <br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>     
+
+                    <br>
+                    <label for="hobbies">Favourite Hobbies:</label><br>
+                    <input type="checkbox" id="Gaming" name="hobbies">
+                    <label for="hobbies">Gaming</label><br>
+                    <input type="checkbox" id="Reading" name="hobbies" >
+                    <label for="hobbies">Reading</label><br>   
+                    <input type="checkbox" id="Basketball" name="hobbies">
+                    <label for="hobbies">Basketball</label><br>    
+
+                    <input type="submit" value="Submit">
+                </form> 
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <p>&copy; Property and Creation of Jun Han S76171</p>
+            <p>For any inquires, please contact <a href="mailto:s76171@ocean.umt.edu.my">My Email</a></p>
+        </div>
+    </body>
+</html>
