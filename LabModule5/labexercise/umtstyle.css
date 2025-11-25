@@ -1,0 +1,489 @@
+body {
+    margin: 0;              /* remove default page margin so header can reach edges */
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* better than gap: large% for full-width layout */
+    gap: 0;
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    background-color: white;
+}
+
+/* list items inherit layout from the parent ul (flex) so no rules needed here */
+
+li a {
+    display: block;
+    color: #4B0082;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline #4B0082;
+}
+
+#navBarWise .dropbtn {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #4B0082;
+  border: none;
+  cursor: pointer;
+}
+
+/* The image in the HTML uses an id="UMTlogo" so select by id */
+#UMTlogo {
+     height: 64px;
+     width: auto;
+     display: block;
+}
+
+#umtwiseLogo {
+     height: 80px;
+     width: auto;
+     display: block;
+}
+
+#navBarWise {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    font-size: larger;
+    background-color: #4B0082; 
+}
+
+#umtwiseHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4B0082;    
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#history {
+    /* center the section's content horizontally and allow wrapping on small screens */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+#history p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#stem {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 150px;
+    background-color: white;
+}
+
+#stem a {
+  width: 250px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#UMTCanselori {
+    width: 512px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+#historyArticle {
+    max-width: 800px;
+    /* center text inside the article if desired; remove invalid flex properties */
+}
+
+.dropbtn {
+  display: block;
+  color: #4B0082;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  border-color: white;
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: white;
+}
+
+#footerInfo {
+  background-color: #720e9e;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  align-items: flex-start;
+}
+
+#mainPage {
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B0082;
+}
+
+.programme-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.programme-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.programme-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  filter: brightness(55%);
+  transition: 0.3s ease;
+}
+
+.programme-card:hover img {
+  filter: brightness(40%);
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.btn {
+  background: #5b2fa8;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #4b2491;
+}
+
+#bachelor {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 150px;
+    background-color: white;
+}
+
+#bachelor ul {
+    display: block;                 /* ensure normal block flow (not flex/inline) */
+    list-style-type: disc;          /* use disc bullets */
+    list-style-position: outside;   /* show markers outside the content box */
+    padding-left: 40px;             /* space to show bullets */
+    margin: 0 0 1rem 0;
+}
+
+#bachelor p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#bachelor li {
+    display: list-item;   /* force list-item rendering if something overrides it */
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.postgrad-banner {
+  width: 100%;
+  background: linear-gradient(90deg, #5b2fa8 0%, #8c3be0 100%);
+  color: #fff;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.postgrad-banner .banner-content h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(24px, 6vw, 48px);
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* optional: ensure banner sits full width even inside centered containers */
+.hero-banner {
+  display: block;
+}
+
+#wiseSection {
+    width: 100%;
+    background-color: #4B0082;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 0 0 250px 250px; /* apply the SVG clip path */
+}
+
+#wiseSection img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#wiseSection p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#wiseSection .wiseBtn {
+    background-color: white;
+    color: #4B0082;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#nicheAreas {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 50px 150px;
+}
+
+#nicheAreas h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#nicheAreas p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.institute-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 50px 150px;
+}
+
+.institute-image-section p {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.institute-image-section button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    padding: 40px 4%;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.card .icon {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .icon svg { display: block; width: 48px; height: 48px; }
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p {
+    margin: 0;
+    color: #7a7a7a;
+    line-height: 1.6;
+    flex: 1;
+    font-size: 15px;
+}
+
+.readmore {
+    color: #4B0082;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 6px;
+}
+
+.readmore:hover { text-decoration: underline; }
+
+.card.purple {
+    background-color: #4B0082;
+    color: #fff;
+}
+
+.card.purple p { color: rgba(255,255,255,0.85); }
+.card.purple .icon svg { color: #fff; stroke: currentColor; }
+.card.purple .readmore { color: #ffd9ff; }
+
+/* small screens: tighter padding */
+@media (max-width: 480px) {
+    .card { padding: 20px; min-height: auto; }
+    .cards-section { padding: 20px 4%; gap: 18px; }
+}
