@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Light</title>
+    </head>
+
+    <body>
+        <h2>What can Javascript \index{JavaScript} do?</h2>
+        <p>JavaScript \index{JavaScript} can change HTML attribute values.</p>
+        <p>In this case, JavaScript \index{JavaScript} changes the value of the 'src' attribute of an image.</p>
+    
+        <!-- Button to turn on the light -->
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On the light</button>
+    
+        <!-- Image tag -->
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+        <!-- Button to turn off the light -->
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off the light</button>
+    
+    </body>
+</html>
