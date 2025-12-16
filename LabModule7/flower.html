@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+        <title>Transparent Image Text</title>
+        <link rel="stylesheet" href="lab7.css">
+    </head>
+
+    <body>
+        <div class="image-container">
+            <img src="images/myimage.avif" alt="Beautiful Scenery">
+            <div class="overlay-text">Jun Han's Flower Shop</div>
+        </div>
+
+        <div class="side-nav overlay-text">
+            <a href="#slideshow-container">Slideshow</a>
+            <a href="#profile-card">Profile Card</a>
+            <a href="#section3">Progress Bar</a>
+            <a href="#section4">Collapsible Section</a>
+        </div>
+
+        <div id="slideshow-container" class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/garden-rose-red-pink-56866-2739074448.jpeg" alt="Image 1">
+            </div>
+
+            <div class="slide fade">
+                <img src="images/OIP-1538397731.jpeg" alt="Image 2">
+            </div>
+
+            <div class="slide fade">
+                <img src="images/pexels-photo-3598619651.jpg" alt="Image 3">
+            </div>
+
+            <div class="slide fade">
+                <img src="images/purple-flower-68-1953864936.jpg" alt="Image 4">
+            </div>
+        </div>
+        <div class="slide-overlay-text">Flower Slideshow Showcase</div>
+
+        <div class="profile-card" id="profile-card">
+            <div class="card-header">
+                <h2>User Profile Card</h2>
+            </div>
+            <img src="images/junhan.jpg" alt="Jun Han" class="profile-image">
+            <h3 class="profile-name">Lim Jun Han</h3>
+            <p class="profile-title">Student and Gamer</p>
+            <p class="profile-education">University Malaysia Terengganu</p>
+            <div class="social-links">
+                <a href="https://www.google.com/" class="social-icon"><img src="images/google.png" alt="Google Logo"></a>
+                <a href="https://www.x.com/" class="social-icon"><img src="images/twitter.png" alt="X Logo"></a>
+                <a href="https://www.linkedin.com/in/jun-han-lim-316229333/" class="social-icon"><img src="images/linkedin.png" alt="Linkedin Logo"></a>
+                <a href="https://www.meta.com/" class="social-icon"><img src="images/facebook.png" alt="Meta Logo"></a>
+            </div>
+            <button class="contact-btn">Contact</button>
+        </div>
+
+        <div class="h2-container overlay-text" id="section3">
+            <h2>Goal of Selling 100 Bouquets of Flower</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="increase-progress">Increase Progress</button>
+            <button id="reset-progress">Reset Progress</button>
+        </div>
+
+        <div class="collapsible-container" id="section4">
+            <h2>Flower Section</h2>
+            <button class="collapsible">Click to Expand/Collapse</button>
+            <div class="collapsible-content">
+                <p>Flowers are the reproductive parts of flowering plants and are often admired for 
+                    their beauty and fragrance. They come in a wide variety of shapes, sizes, and colors, 
+                    each adapted to attract specific pollinators. 
+                    In addition to their ecological importance, flowers
+                    have significant cultural and symbolic meanings in many societies around the world.
+                </p>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
