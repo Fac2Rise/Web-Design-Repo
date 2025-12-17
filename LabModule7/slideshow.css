@@ -9,7 +9,7 @@ body {
 }
 
 .slideshow-container {
-    position: relative;
+    position: absolute;
     max-width: 80%;
     height: 400px;
     overflow: hidden;
